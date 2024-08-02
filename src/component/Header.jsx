@@ -6,7 +6,7 @@ const Header = () => {
     }
   return (
     <div>
-      <section className="flex justify-center items-center  bg-[var(--primary-color)] hidden md:block ">
+      <section className="flex justify-center items-center relative bg-[var(--primary-color)] hidden md:block ">
       <div className="container justify-between mx-auto flex py-3">
         {/* First Column */}
         <div className=" hidden lg:flex justify-center">
@@ -51,7 +51,7 @@ const Header = () => {
       </div>
     </section>
 
-    <section className='bg-gray-500 flex justify-between px-6 py-4'>
+    <section className='bg-#6b728063 absolute w-full z-10 t-10 flex justify-between px-6 py-4'>
     <div className="flex justify-start items-center">
       <div className="w-auto">
         <a href="https://wdtthemes.kinsta.cloud/mezan/" rel="home">
