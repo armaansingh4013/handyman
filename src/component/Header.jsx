@@ -135,15 +135,15 @@ const Header = () => {
            
          </li>
          <li className="menu-item">
-           <a href="/" className="flex items-center justify-center border-b-2 py-3">
+           <Link to="/services" className="flex items-center justify-center border-b-2 py-3">
              Service
-           </a>
+           </Link>
            
          </li>
          <li className="menu-item">
-           <a href="/" className="flex items-center justify-center border-b-2 py-3">
+           <Link to="/work" className="flex items-center justify-center border-b-2 py-3">
              Work
-           </a>
+           </Link>
            
          </li>
          <li className="menu-item">
