@@ -1,9 +1,9 @@
 import React from 'react'
-import HeroSection from '../component/HeroSection'
-import MainCrousal from '../component/MainCrousal'
-import ServicesSection from '../component/ServicesSection'
-import SocialLinks from '../component/SocialLinks'
-import CustomerReviews from '../component/CustomerReviews'
+import HeroSection from '../component/Home/HeroSection'
+import MainCrousal from '../component/Home/MainCrousal'
+import ServicesSection from '../component/Home/ServicesSection'
+import SocialLinks from '../component/Home/SocialLinks'
+import CustomerReviews from '../component/Home/CustomerReviews'
 const Home = () => {
   return (
    <>

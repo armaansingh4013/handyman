@@ -26,7 +26,7 @@ LET'S GET TO WORK        </p>
           Eget mi proin sed libero. Egestas sed sed risus pretium quam vulputate dignissim. Tincidunt vitae semper quis lectus nulla at volutpat diam.
         </p>
         <div className="flex  items-center space-x-4 mb-4">
-          <a href="#" className="bg-[var(--primary-color)] text-white px-6 py-3 rounded-full hover:bg-blue-600">
+          <a href="#" className="bg-[var(--primary-color)] text-white px-6 py-3 rounded-full hover:bg-white hover:text-[var(--primary-color)]">
             Get a quote
           </a>
           <a href="#" className="bg-gray-500 text-white px-6 py-3 rounded-full hover:bg-gray-600">

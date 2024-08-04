@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 const Header = () => {
     const [isMobileView,setIsMobileView] = useState(false)
     const toggleMobileView = ()=>{
@@ -70,16 +71,17 @@ const Header = () => {
         <nav className="hidden md:flex items-center">
           <ul className="flex flex-col md:flex-row items-center md:space-y-0 md:space-x-4 lg:text-xl">
             <li >
-              <a href="/" className="block p-4 hover:text-[var(--primary-color)]">Home</a>
+              <Link to="/" className="block p-4 hover:text-[var(--primary-color)]">Home</Link>
              
             </li>
             <li><a href="/" className="block p-4 hover:text-[var(--primary-color)]">About Us</a></li>
             <li className="relative group">
-              <a href="/" className="block p-4 hover:text-[var(--primary-color)]">Services</a>
+              <Link to="/services" className="block p-4 hover:text-[var(--primary-color)]">Services</Link>
+              {/* <a href="/" className="block p-4 hover:text-[var(--primary-color)]">Services</a> */}
               
             </li>
             <li className="relative group">
-              <a href="/" className="block p-4 hover:text-[var(--primary-color)]">Work</a>
+              <Link to="/work" className="block p-4 hover:text-[var(--primary-color)]">Work</Link>
               
             </li>
             <li className="relative group">
@@ -95,7 +97,7 @@ const Header = () => {
 
     <div className="flex items-center" >
       <div className="hidden sm:block text-center">
-        <a href="#" className="bg-[var(--primary-color)] px-6 py-3 rounded-3xl shadow hover:bg-blue-700 transition">
+        <a href="#" className="bg-[var(--primary-color)] px-6 py-3 rounded-3xl shadow hover:bg-white hover:text-[var(--primary-color)] transition">
           Get a Quote
         </a>
       </div>

@@ -1,18 +1,24 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes  as PathRoutes} from 'react-router-dom'
-import Footer from '../component/Footer'
+import {  Route, Routes  as PathRoutes} from 'react-router-dom'
 import Home from '../pages/Home'
+import Services from '../pages/Services'
+import Work from '../pages/Work'
+import CategoryWork from '../pages/CategoryWork'
+import WorkItem from '../pages/WorkItem'
 
 const Routes = () => {
   return (
     <>
-    <BrowserRouter>
+    
     <PathRoutes>
       <Route path="/" element={<Home/>}></Route>
-      <Route path="/f" element={<Footer/>}></Route>
+      <Route path="/services" element={<Services/>}></Route>
+      <Route path="/work" element={<Work/>}/>
+      <Route path="/work/*" element={<CategoryWork/>}/>
+      <Route path="/workItem" element={<WorkItem/>}/>
 
     </PathRoutes>
-    </BrowserRouter>
+    
     
     </>
   )
