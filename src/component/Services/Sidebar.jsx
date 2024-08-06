@@ -11,14 +11,14 @@ const Sidebar = ({ selectedItem, setSelectedItem, categories }) => {
           return (
             <li
             key={index}
-              onClick={() => selection(category)}
+              onClick={() => selection(category.name)}
               className={`mx-2 sm:m-0 p-1 px-2 sm:p-2 w-72 sm:w-full text-center backdrop-blur-lg shadow-xl rounded-2xl ${
-                selectedItem == category
+                selectedItem == category.name
                   ? "bg-[var(--primary-color)] text-white"
                   : "text-[var(--primary-color)] bg-white/70"
               }`}
             >
-              {category}
+              {category.name}
             </li>
           );
         })}

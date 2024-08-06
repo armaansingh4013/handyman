@@ -14,8 +14,8 @@ const Routes = () => {
       <Route path="/" element={<Home/>}></Route>
       <Route path="/services" element={<Services/>}></Route>
       <Route path="/work" element={<Work/>}/>
-      <Route path="/work/*" element={<CategoryWork/>}/>
-      <Route path="/workItem" element={<WorkItem/>}/>
+      <Route path="/work/:name" element={<CategoryWork/>}/>
+      <Route path="/workItem/:id" element={<WorkItem/>}/>
 
     </PathRoutes>
     

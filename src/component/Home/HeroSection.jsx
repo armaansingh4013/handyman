@@ -3,7 +3,7 @@ import React from 'react'
 const HeroSection = () => {
   return (
     <section
-    className="relative h-screen flex items-center justify-center bg-dark bg-cover bg-center fadeIn"
+    className="relative h-screen flex items-center justify-center bg-dark bg-cover bg-center fadeIn border-b-2 border-[var(--primary-color)]"
     style={{minHeight:"500px", animationDelay: '100ms' }}
   >
     <div className="absolute inset-0 z-0">

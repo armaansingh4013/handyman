@@ -4,10 +4,12 @@ const CustomerReviews = () => {
   return (
     <>
     <section className=' bg-[var(--secondary-color)] py-8'>
-   <div className="text-center text-[var(--primary-color)]">
-          <h2 className="text-4xl font-bold leading-tight mb-8">
-            Our Services Include
+    <div className="text-center text-[var(--primary-color)] py-4 flex items-center justify-evenly mb-4">
+          <div className='w-1/4 border border-[var(--primary-color)]'></div>
+          <h2 className="text-4xl font-bold leading-tight">
+            Our Satisfied Customer
           </h2>
+          <div className='w-1/4 border border-[var(--primary-color)]'></div>
         </div>
          <div className="flex flex-wrap justify-center">
     
