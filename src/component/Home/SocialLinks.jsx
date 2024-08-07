@@ -3,7 +3,7 @@ import React from 'react'
 const SocialLinks = () => {
   return (
     <>
-    <div className="flex flex-wrap justify-center items-center bg-[var(--secondary-color)]">
+    <div className="flex flex-wrap justify-center items-center bg-[#000000e6] py-8">
       <div className="w-full md:w-1/4 p-4">
         <div className="relative bg-white text-center shadow-md rounded-lg overflow-hidden group">
           <div className="text-[var(--primary-color)] p-4">

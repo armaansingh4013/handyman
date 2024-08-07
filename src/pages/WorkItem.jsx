@@ -49,7 +49,9 @@ const WorkItem = () => {
 
   return (
     <>
+      <div className="h-24 bg-gray-700"></div>
     <div className="flex flex-col md:flex-row items-center justify-evenly bg-gray-100 h-screen">
+    
   <div className="w-full md:w-3/6 h-1/2 py-26 md:h-4/5">
     <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
       <div className="absolute w-full h-full flex transition-opacity duration-1000 ease-in-out">

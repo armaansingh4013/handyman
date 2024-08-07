@@ -3,9 +3,9 @@ import React from 'react'
 const ServicesSection = () => {
   return (
     <>
-     <section  className="relative w-full bg-[var(--secondary-color)] py-8" >
-      
-      <div className="relative">
+     <section  className="relative w-full bg-[var(--secondary-color)]; bg-[url('./src/assets/handyman.jpg')] bg-center   " >
+      <div className='w-full bg-[#000000e6] h-full flex justify-center '>
+      <div className="relative w-full py-8">
         <div className="text-center text-[var(--primary-color)] py-4 flex items-center justify-evenly">
           <div className='w-1/4 border border-[var(--primary-color)]'></div>
           <h2 className="text-4xl font-bold leading-tight">
@@ -47,6 +47,7 @@ const ServicesSection = () => {
             See All Services
           </a>
         </div>
+      </div>
       </div>
     </section>
     </>

@@ -7,12 +7,13 @@ import CustomerReviews from '../component/Home/CustomerReviews'
 const Home = () => {
   return (
    <>
-
+<div className=''>
    <HeroSection/>
    <MainCrousal/>
    <ServicesSection/>
    <SocialLinks/>
    <CustomerReviews/>
+   </div>
    </>
   )
 }

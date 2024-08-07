@@ -53,8 +53,10 @@ const MainCrousal = () => {
   };
 
   return (
-    <div className="bg-[var(--secondary-color)] pt-6">
-      <div className="w-11/12 relative m-auto text-[var(--primary-color)]">
+    <>
+    <div className="w-full h-24 bg-[url('./src/assets/handyman.jpg')] "><div className="bg-[#000000e6] h-full w-full"></div></div>
+    <div className="pt-6 bg-[#000000e6] ">
+      <div className=" w-11/12 relative m-auto text-[var(--primary-color)]">
         <Slider {...settings}>
           <div className=" flex justify-center items-center p-8 ">
             <svg
@@ -188,6 +190,7 @@ const MainCrousal = () => {
         </Slider>
       </div>
     </div>
+    </>
   );
 };
 

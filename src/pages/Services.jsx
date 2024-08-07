@@ -19,7 +19,8 @@ const Services = () => {
         }
         const data = await response.json();
         
-        setCategories((prevCategories) => [...prevCategories, ...data]);
+        // setCategories((prevCategories) => [...prevCategories, ...data]);
+        setCategories([{name:"Popular"}, ...data]);
       } catch (error) {
         setError(error.message);
       }
@@ -32,7 +33,7 @@ const Services = () => {
   return (
     <>
     <PageTitle/>
-    <div className='flex flex-col sm:flex-row justify-evenly bg-gradient-to-br from-black via-gray-800 to-gray-500'>
+    <div className='flex flex-col sm:flex-row justify-evenly bg-gradient-to-br from-black via-gray-800 to-gray-500 min-h-screen'>
         
      <Sidebar selectedItem={selectedItem} setSelectedItem={setSelectedItem} categories={categories}/>
     <ItemsSection selectedItem={selectedItem}/>

@@ -33,7 +33,7 @@ const CategoryWork = () => {
   return (
     <>
       <PageTite />
-      <div className="bg-gradient-to-br from-black via-gray-600 to-gray-500 flex justify-center">
+      <div className="bg-gradient-to-br from-black via-gray-600 to-gray-500 flex justify-center min-h-screen">
         <div
           className={`flex flex-wrap justify-centerm w-11/12 transform transition-all duration-150 ease-out ${
             loaded ? "scale-100" : "scale-0"

@@ -3,7 +3,8 @@ import React from 'react'
 const CustomerReviews = () => {
   return (
     <>
-    <section className=' bg-[var(--secondary-color)] py-8'>
+    <section className=" bg-[url('./src/assets/handyman.jpg')] ">
+    <div className='py-8 bg-[#000000e6]'>
     <div className="text-center text-[var(--primary-color)] py-4 flex items-center justify-evenly mb-4">
           <div className='w-1/4 border border-[var(--primary-color)]'></div>
           <h2 className="text-4xl font-bold leading-tight">
@@ -11,7 +12,7 @@ const CustomerReviews = () => {
           </h2>
           <div className='w-1/4 border border-[var(--primary-color)]'></div>
         </div>
-         <div className="flex flex-wrap justify-center">
+         <div className="flex flex-wrap justify-center py-8">
     
   <div className="w-full md:w-1/3 lg:w-1/4 p-4">
     <div className="bg-white rounded-lg shadow-lg overflow-hidden text-center">
@@ -77,7 +78,7 @@ const CustomerReviews = () => {
     </div>
   </div>
 </div>
-{/* </div> */}
+</div>
 
     </section>
     </>

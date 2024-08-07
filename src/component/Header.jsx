@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 const Header = () => {
     const [isMobileView,setIsMobileView] = useState(false)
     const toggleMobileView = ()=>{
         setIsMobileView(!isMobileView)
     }
+    
+    const location = useLocation();
+    const path = location.pathname.split("/");
+    const currPath = path[1]
   return (
     <div>
       <section className="flex justify-center items-center relative bg-[var(--primary-color)] hidden md:block ">
@@ -52,15 +56,20 @@ const Header = () => {
       </div>
     </section>
 
-    <section className='bg-#6b728063 absolute w-full z-10 t-10 flex justify-between px-6 py-4'>
+    <section className='bg-#6b728063 absolute w-full z-10 t-10 flex justify-between px-6 pt-2 backdrop-blur-sm'>
     <div className="flex justify-start items-center">
-      <div className="w-auto">
-        <a href="https://wdtthemes.kinsta.cloud/mezan/" rel="home">
+      <div className="w-auto text-[var(--primary-color)]">
+        <a href="/" rel="home" className=' flex items-center font-bold text-xl' style={{
+  "font-family": '"Kaushan Script", cursive',
+  "font-weight": 400,
+  "font-style": "normal"
+}}>
           <img
-            src="https://wdtthemes.kinsta.cloud/mezan/wp-content/themes/mezan/assets/images/light-logo.svg"
+            src="./src/assets/logo2.png"
             alt="Mezan"
-            className="w-auto h-6"
+            className="w-auto h-20"
           />
+          <p>GG BROTHERS</p>
         </a>
         
       </div>
@@ -71,17 +80,17 @@ const Header = () => {
         <nav className="hidden md:flex items-center">
           <ul className="flex flex-col md:flex-row items-center md:space-y-0 md:space-x-4 lg:text-xl">
             <li >
-              <Link to="/" className="block p-4 hover:text-[var(--primary-color)]">Home</Link>
+              <Link to="/" className={ `block p-4 hover:text-[var(--primary-color)] ${currPath==""?"text-[var(--primary-color)]":"text-white"}`}>Home</Link>
              
             </li>
             <li><a href="/" className="block p-4 hover:text-[var(--primary-color)]">About Us</a></li>
             <li className="relative group">
-              <Link to="/services" className="block p-4 hover:text-[var(--primary-color)]">Services</Link>
+              <Link to="/services" className={`block p-4 hover:text-[var(--primary-color)] ${currPath=="services"?"text-[var(--primary-color)]":"text-white"}`}>Services</Link>
               {/* <a href="/" className="block p-4 hover:text-[var(--primary-color)]">Services</a> */}
               
             </li>
             <li className="relative group">
-              <Link to="/work" className="block p-4 hover:text-[var(--primary-color)]">Work</Link>
+              <Link to="/work" className={`block p-4 hover:text-[var(--primary-color)] ${currPath=="work"?"text-[var(--primary-color)]":"text-white"}`}>Work</Link>
               
             </li>
             <li className="relative group">
@@ -97,9 +106,8 @@ const Header = () => {
 
     <div className="flex items-center" >
       <div className="hidden sm:block text-center">
-        <a href="#" className="bg-[var(--primary-color)] px-6 py-3 rounded-3xl shadow hover:bg-white hover:text-[var(--primary-color)] transition">
-          Get a Quote
-        </a>
+        <a href="#" className="bg-[var(--primary-color)] px-6 font-semibold py-3 rounded-3xl shadow hover:bg-white hover:text-[var(--primary-color)] transition">
+Share a thought        </a>
       </div>
 
       
@@ -135,7 +143,7 @@ const Header = () => {
            
          </li>
          <li className="menu-item">
-           <Link to="/services" className="flex items-center justify-center border-b-2 py-3">
+           <Link to="/services" className="flex items-center justify-center border-b-2 py-3 hover:text-[var(--primary-color)]">
              Service
            </Link>
            
