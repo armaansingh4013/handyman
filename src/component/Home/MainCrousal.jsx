@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import handyman from "../../assets/handyman.jpg"
 
 const MainCrousal = () => {
   const settings = {
@@ -54,7 +55,7 @@ const MainCrousal = () => {
 
   return (
     <>
-    <div className="w-full h-24 bg-[url('./src/assets/handyman.jpg')] "><div className="bg-[#000000e6] h-full w-full"></div></div>
+    <div className={`w-full h-24 bg-[url(${handyman})] `}><div className="bg-[#000000e6] h-full w-full"></div></div>
     <div className="pt-6 bg-[#000000e6] ">
       <div className=" w-11/12 relative m-auto text-[var(--primary-color)]">
         <Slider {...settings}>

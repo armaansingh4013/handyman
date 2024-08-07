@@ -1,9 +1,9 @@
 import React from 'react'
-
+import handyman from "../../assets/handyman.jpg"
 const ServicesSection = () => {
   return (
     <>
-     <section  className="relative w-full bg-[var(--secondary-color)]; bg-[url('./src/assets/handyman.jpg')] bg-center   " >
+     <section  className={`relative w-full bg-[url(${handyman})] bg-center`}>
       <div className='w-full bg-[#000000e6] h-full flex justify-center '>
       <div className="relative w-full py-8">
         <div className="text-center text-[var(--primary-color)] py-4 flex items-center justify-evenly">
