@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import logo2 from "../assets/logo2.png"
 const Header = () => {
     const [isMobileView,setIsMobileView] = useState(false)
     const toggleMobileView = ()=>{
@@ -65,7 +66,7 @@ const Header = () => {
   "font-style": "normal"
 }}>
           <img
-            src="./src/assets/logo2.png"
+            src={logo2}
             alt="Mezan"
             className="w-auto h-20"
           />
