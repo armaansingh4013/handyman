@@ -55,7 +55,7 @@ const MainCrousal = () => {
 
   return (
     <>
-    <div className={`w-full h-24 bg-[url(${handyman})] `}><div className="bg-[#000000e6] h-full w-full"></div></div>
+    <div style={{backgroundImage:`url(${handyman})`}} className={`w-full h-24  `}><div className="bg-[#000000e6] h-full w-full"></div></div>
     <div className="pt-6 bg-[#000000e6] ">
       <div className=" w-11/12 relative m-auto text-[var(--primary-color)]">
         <Slider {...settings}>

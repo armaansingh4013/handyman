@@ -3,7 +3,7 @@ import handyman from "../../assets/handyman.jpg"
 const CustomerReviews = () => {
   return (
     <>
-    <section className={`bg-[url(${handyman})] `}>
+    <section style={{backgroundImage:`url(${handyman})`}}>
     <div className='py-8 bg-[#000000e6]'>
     <div className="text-center text-[var(--primary-color)] py-4 flex items-center justify-evenly mb-4">
           <div className='w-1/4 border border-[var(--primary-color)]'></div>
