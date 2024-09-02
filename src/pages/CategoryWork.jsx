@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import PageTite from "../component/PageTitle";
 import CategoryWorkCard from "../component/CategoryWorkCard";
 import { useParams } from "react-router-dom";
+import handyman from '../assets/handyman.jpg'
+
 
 const CategoryWork = () => {
   
@@ -32,8 +34,8 @@ const CategoryWork = () => {
   }, []);
   return (
     <>
-      <PageTite />
-      <div className="bg-gradient-to-br from-black via-gray-600 to-gray-500 flex justify-center min-h-screen">
+      <PageTite /><div style={{backgroundImage:`url(${handyman})`}}>
+      <div className="bg-[#000000e6] flex justify-center min-h-screen">
         <div
           className={`flex flex-wrap justify-centerm w-11/12 transform transition-all duration-150 ease-out ${
             loaded ? "scale-100" : "scale-0"
@@ -47,7 +49,7 @@ const CategoryWork = () => {
         )}
           
         </div>
-      </div>
+      </div></div>
     </>
   );
 };

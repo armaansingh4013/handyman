@@ -5,7 +5,7 @@ const Sidebar = ({ selectedItem, setSelectedItem, categories }) => {
     setSelectedItem(select);
   };
   return (
-    <div className="mx-2 sm:w-1/4 my-8 rounded-lg bg-gray-400 bg-opacity-50 backdrop-blur-lg px-4 py-3 sm:py-9">
+    <div className="mx-2 sm:w-1/4 my-8 rounded-lg bg-gray-700 bg-opacity-30 backdrop-blur-sm px-4 py-3 sm:py-9">
       <ul className="sm:space-y-6 flex overflow-scroll sm:block sm:overflow-hidden">
         {categories.map((category,index) => {
           return (

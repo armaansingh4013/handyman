@@ -61,9 +61,9 @@ const Header = () => {
     <div className="flex justify-start items-center">
       <div className="w-auto text-[var(--primary-color)]">
         <a href="/" rel="home" className=' flex items-center font-bold text-xl' style={{
-  "font-family": '"Kaushan Script", cursive',
-  "font-weight": 400,
-  "font-style": "normal"
+  "fontFamily": '"Kaushan Script", cursive',
+  "fontWeight": 400,
+  "fontStyle": "normal"
 }}>
           <img
             src={logo2}
@@ -84,7 +84,7 @@ const Header = () => {
               <Link to="/" className={ `block p-4 hover:text-[var(--primary-color)] ${currPath==""?"text-[var(--primary-color)]":"text-white"}`}>Home</Link>
              
             </li>
-            <li><a href="/" className="block p-4 hover:text-[var(--primary-color)]">About Us</a></li>
+            <li><Link to="/aboutus" className="block p-4 hover:text-[var(--primary-color)]">About Us</Link></li>
             <li className="relative group">
               <Link to="/services" className={`block p-4 hover:text-[var(--primary-color)] ${currPath=="services"?"text-[var(--primary-color)]":"text-white"}`}>Services</Link>
               {/* <a href="/" className="block p-4 hover:text-[var(--primary-color)]">Services</a> */}
@@ -95,7 +95,7 @@ const Header = () => {
               
             </li>
             <li className="relative group">
-              <a href="/" className="block p-4 hover:text-[var(--primary-color)]">Contact</a>
+              <Link to="/contactus" className="block p-4 hover:text-[var(--primary-color)]">Contact</Link>
               
             </li>
             

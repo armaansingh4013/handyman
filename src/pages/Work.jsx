@@ -1,7 +1,7 @@
 import React, { useEffect ,useState} from 'react'
 import PageTitle from '../component/PageTitle';
 import WorkCard from '../component/WorkCard';
-
+import handyman from '../assets/handyman.jpg'
 const Work = () => {
   const base_url = "http://localhost:3001"
   const [works, setWorks] = useState([]);
@@ -40,9 +40,11 @@ const Work = () => {
   return (
     <>
     <PageTitle/>
-    <div className={`bg-gradient-to-br from-black via-gray-600 to-gray-500 min-h-screen`}>
+    <div style={{backgroundImage:`url(${handyman})`}} className="">
+    <div className={`bg-[#000000e6] min-h-screen`}>
       <div className={` flex flex-wrap space-x justify-center transform transition-all duration-150 ease-out ${loaded?'scale-100':'scale-0'}`}>
       {works.map((work,index)=><WorkCard key={index} work={work}/>)}</div>
+    </div>
     </div>
     </>
   )

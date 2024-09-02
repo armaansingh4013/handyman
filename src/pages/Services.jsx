@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import ItemsSection from '../component/Services/ItemsSection'
 import Sidebar from '../component/Services/Sidebar'
 import PageTitle from '../component/PageTitle';
+import handyman from "../assets/handyman.jpg"
+
 
 const Services = () => {
   const base_url = "http://localhost:3001"
@@ -33,11 +35,11 @@ const Services = () => {
   return (
     <>
     <PageTitle/>
-    <div className='flex flex-col sm:flex-row justify-evenly bg-gradient-to-br from-black via-gray-800 to-gray-500 min-h-screen'>
-        
+    <div style={{backgroundImage:`url(${handyman})`}} className=''>
+       <div className="flex flex-col sm:flex-row justify-evenly bg-[#000000c2] min-h-screen"> 
      <Sidebar selectedItem={selectedItem} setSelectedItem={setSelectedItem} categories={categories}/>
     <ItemsSection selectedItem={selectedItem}/>
-
+    </div>
     </div></>
   )
 }
