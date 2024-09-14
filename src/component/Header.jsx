@@ -135,31 +135,31 @@ Share a thought        </button>
            
          </li>
          <li className="menu-item">
-           <Link  to="/" className="flex items-center justify-center border-b-2 py-3">
+           <Link  to="/" className="flex items-center justify-center border-b-2 py-3" onClick={toggleMobileView}>
              Home
            </Link>
            
          </li>
          <li className="menu-item">
-           <Link  to="/about-us" className="flex items-center justify-center border-b-2 py-3">
+           <Link  to="/about-us" className="flex items-center justify-center border-b-2 py-3"onClick={toggleMobileView}>
              About Us
            </Link>
            
          </li>
          <li className="menu-item">
-           <Link to="/services" className="flex items-center justify-center border-b-2 py-3 hover:text-[var(--primary-color)]">
+           <Link to="/services" className="flex items-center justify-center border-b-2 py-3 hover:text-[var(--primary-color)]"onClick={toggleMobileView}>
              Service
            </Link>
            
          </li>
          <li className="menu-item">
-           <Link to="/work" className="flex items-center justify-center border-b-2 py-3">
+           <Link to="/work" className="flex items-center justify-center border-b-2 py-3"onClick={toggleMobileView}>
              Work
            </Link>
            
          </li>
          <li className="menu-item">
-           <Link  to="/contact-us" className="flex items-center justify-center border-b-2 py-3">
+           <Link  to="/contact-us" className="flex items-center justify-center border-b-2 py-3"onClick={toggleMobileView}>
              Contact
            </Link>
            
