@@ -168,6 +168,12 @@ Share a thought        </button>
            </Link>
            
          </li>
+         <li className="menu-item">
+           <Link  to="/admin" className="flex items-center justify-center border-b-2 py-3"onClick={toggleMobileView}>
+             Admin
+           </Link>
+           
+         </li>
          
        </ul>
        
