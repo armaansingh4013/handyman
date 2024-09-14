@@ -3,11 +3,12 @@ import PageTite from "../component/PageTitle";
 import CategoryWorkCard from "../component/CategoryWorkCard";
 import { useParams } from "react-router-dom";
 import handyman from '../assets/handyman.jpg'
+import { api_url } from "../config";
 
 
 const CategoryWork = () => {
   
-  const base_url = "http://localhost:3001"
+  const base_url = api_url
   const [loaded, setLoaded] = useState(false);
   const { name } = useParams();
   const [items, setItems] = useState([]);

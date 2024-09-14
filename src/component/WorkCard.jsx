@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { api_url } from '../config'
 
 const workcard = ({work}) => {
-  const image ="http://localhost:3001/"+work.image
+  const image =api_url+"/"+work.image
   return (
     <>
     <div className="w-full sm:w-1/4 h-72 overflow-hidden rounded-xl m-6 ">

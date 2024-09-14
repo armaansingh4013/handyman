@@ -1,11 +1,12 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 const HeroSection = () => {
   return (
     <section
     className="relative h-screen flex items-center justify-center bg-dark bg-cover bg-center fadeIn "
     style={{minHeight:"500px", animationDelay: '100ms' }}
   >
+    
     <div className="absolute inset-0 z-0">
       <video
         className="object-cover w-full h-full "
@@ -29,9 +30,9 @@ LET'S GET TO WORK        </p>
           {/* <a href="#" className="bg-[var(--primary-color)] text-white px-6 py-3 rounded-full hover:bg-white hover:text-[var(--primary-color)]">
             Get a quote
           </a> */}
-          <a href="#" className="bg-gray-500 text-white px-6 py-3 rounded-full hover:bg-gray-600">
+          <Link to="/about-us" className="bg-gray-500 text-white px-6 py-3 rounded-full hover:bg-gray-600">
             Learn More
-          </a>
+          </Link>
         </div>
         
       </div>

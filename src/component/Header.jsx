@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import logo2 from "../assets/logo2.png"
+import FeedbackModal from './FeedbackModal'
 const Header = () => {
     const [isMobileView,setIsMobileView] = useState(false)
+    const [feedbackModal,setFeedbackModal] = useState(false)
     const toggleMobileView = ()=>{
         setIsMobileView(!isMobileView)
     }
@@ -12,6 +14,7 @@ const Header = () => {
     const currPath = path[1]
   return (
     <div>
+      <FeedbackModal isOpen={feedbackModal} onClose={() => setFeedbackModal(false)}/>
       <section className="flex justify-center items-center relative bg-[var(--primary-color)] hidden md:block ">
       <div className="container justify-between mx-auto flex py-3">
         {/* First Column */}
@@ -84,7 +87,7 @@ const Header = () => {
               <Link to="/" className={ `block p-4 hover:text-[var(--primary-color)] ${currPath==""?"text-[var(--primary-color)]":"text-white"}`}>Home</Link>
              
             </li>
-            <li><Link to="/aboutus" className="block p-4 hover:text-[var(--primary-color)]">About Us</Link></li>
+            <li><Link to="/about-us" className={`block p-4 hover:text-[var(--primary-color)] ${currPath=="about-us"?"text-[var(--primary-color)]":"text-white"}`}>About Us</Link></li>
             <li className="relative group">
               <Link to="/services" className={`block p-4 hover:text-[var(--primary-color)] ${currPath=="services"?"text-[var(--primary-color)]":"text-white"}`}>Services</Link>
               {/* <a href="/" className="block p-4 hover:text-[var(--primary-color)]">Services</a> */}
@@ -95,7 +98,7 @@ const Header = () => {
               
             </li>
             <li className="relative group">
-              <Link to="/contactus" className="block p-4 hover:text-[var(--primary-color)]">Contact</Link>
+              <Link to="/contact-us" className={`block p-4 hover:text-[var(--primary-color)] ${currPath=="contact-us"?"text-[var(--primary-color)]":"text-white"}`}>Contact</Link>
               
             </li>
             
@@ -107,15 +110,15 @@ const Header = () => {
 
     <div className="flex items-center" >
       <div className="hidden sm:block text-center">
-        <a href="#" className="bg-[var(--primary-color)] px-6 font-semibold py-3 rounded-3xl shadow hover:bg-white hover:text-[var(--primary-color)] transition">
-Share a thought        </a>
+        <button onClick={() => setFeedbackModal(true)}  className="bg-[var(--primary-color)] px-6 font-semibold py-3 rounded-3xl shadow hover:bg-white hover:text-[var(--primary-color)] transition">
+Share a thought        </button>
       </div>
 
       
     
       <div className={`fixed inset-0 bg-gray-800 bg-opacity-50 transition-opacity ${isMobileView ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={toggleMobileView}></div>
      <div className="md:hidden flex items-center px-4 relative">
-         <div href="/" className="menu-trigger flex items-center text-white" onClick={toggleMobileView}>
+         <div className="menu-trigger flex items-center text-white" onClick={toggleMobileView}>
          <i className="text-3xl fa-solid fa-bars "></i>
         
         </div>
@@ -132,15 +135,15 @@ Share a thought        </a>
            
          </li>
          <li className="menu-item">
-           <a href="/" className="flex items-center justify-center border-b-2 py-3">
+           <Link  to="/" className="flex items-center justify-center border-b-2 py-3">
              Home
-           </a>
+           </Link>
            
          </li>
          <li className="menu-item">
-           <a href="/" className="flex items-center justify-center border-b-2 py-3">
+           <Link  to="/about-us" className="flex items-center justify-center border-b-2 py-3">
              About Us
-           </a>
+           </Link>
            
          </li>
          <li className="menu-item">
@@ -156,9 +159,9 @@ Share a thought        </a>
            
          </li>
          <li className="menu-item">
-           <a href="/" className="flex items-center justify-center border-b-2 py-3">
+           <Link  to="/contact-us" className="flex items-center justify-center border-b-2 py-3">
              Contact
-           </a>
+           </Link>
            
          </li>
          

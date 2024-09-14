@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { api_url } from '../config';
 
 const HomeFooter = () => {
     
-  const base_url = "http://localhost:3001"
+  const base_url = api_url
   // Initialize form state
   const [formData, setFormData] = useState({
     firstName: '',

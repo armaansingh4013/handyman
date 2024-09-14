@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 
 import handyman from "../assets/handyman.jpg"
+import { api_url } from '../config';
 
 const ContactUs = () => {
   const Navigate = useNavigate()
-  const base_url = "http://localhost:3001"
+  const base_url = api_url
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -56,7 +57,7 @@ const ContactUs = () => {
     <div style={{backgroundImage:`url(${handyman})`}}>
     <div  className="min-h-screen bg-[#000000c2] text-white flex justify-center items-center py-10">
       
-      <div className="bg-gray-700 bg-opacity-30 backdrop-blur-sm p-8 rounded-lg shadow-lg max-w-2xl w-full mt-14">
+      <div className="bg-gray-700 bg-opacity-30 backdrop-blur-sm p-8 rounded-lg shadow-lg max-w-2xl w-full mt-14 animate-zoomOutCenter">
         <h1 className="text-3xl font-bold mb-6 text-center text-[var(--primary-color)]">Contact Us</h1>
         <form onSubmit={handleSubmit}>
           {/* Flex container for first and last name */}
