@@ -101,6 +101,10 @@ const Header = () => {
               <Link to="/contact-us" className={`block p-4 hover:text-[var(--primary-color)] ${currPath=="contact-us"?"text-[var(--primary-color)]":"text-white"}`}>Contact</Link>
               
             </li>
+            <li className="relative group">
+              <Link to="/admin" className={`block p-4 hover:text-[var(--primary-color)] `}>Admin</Link>
+              
+            </li>
             
           </ul>
         </nav>
