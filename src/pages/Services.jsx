@@ -8,9 +8,9 @@ import { api_url } from '../config';
 
 const Services = () => {
   const base_url = api_url
-  const [categories, setCategories] = useState([{name:"Popular"}]);
+  const [categories, setCategories] = useState([]);
   const [error, setError] = useState(null);
-    const [selectedItem,setSelectedItem] = useState("Popular");
+    const [selectedItem,setSelectedItem] = useState("");
     const [loaded, setLoaded] = useState(false);
     
   useEffect(() => {
