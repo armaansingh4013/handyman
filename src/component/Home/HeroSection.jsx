@@ -22,8 +22,8 @@ const HeroSection = () => {
       <div className="w-full lg:w-1/2 ">
       <p className="text-white text-lg mb-6">
 LET'S GET TO WORK        </p>
-        <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-[var(--primary-color)]">YOUR HOME ,<br/> OUR PRIORITY</h2>
-        <p className="text-white text-lg mb-6">
+        <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-[var(--primary-color)] z-10">YOUR HOME ,<br/> OUR PRIORITY</h2>
+        <p className="text-white text-lg mb-6 z-10">
           Eget mi proin sed libero. Egestas sed sed risus pretium quam vulputate dignissim. Tincidunt vitae semper quis lectus nulla at volutpat diam.
         </p>
         <div className="flex  items-center space-x-4 mb-4">
