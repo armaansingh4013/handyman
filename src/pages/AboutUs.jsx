@@ -48,7 +48,7 @@ const AboutUs = () => {
             {/* Team Member 1 */}
             <div className="bg-gray-700 p-6 rounded-lg text-center">
               <img
-                src="https://via.placeholder.com/150"
+                src="https://t3.ftcdn.net/jpg/02/43/12/34/240_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
                 alt="Team Member"
                 className="w-32 h-32 rounded-full mx-auto mb-4"
               />
@@ -59,7 +59,7 @@ const AboutUs = () => {
             {/* Team Member 2 */}
             <div className="bg-gray-700 p-6 rounded-lg text-center">
               <img
-                src="https://via.placeholder.com/150"
+                src="https://t3.ftcdn.net/jpg/02/43/12/34/240_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
                 alt="Team Member"
                 className="w-32 h-32 rounded-full mx-auto mb-4"
               />
@@ -70,7 +70,7 @@ const AboutUs = () => {
             {/* Team Member 3 */}
             <div className="bg-gray-700 p-6 rounded-lg text-center">
               <img
-                src="https://via.placeholder.com/150"
+                src="https://t3.ftcdn.net/jpg/02/43/12/34/240_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
                 alt="Team Member"
                 className="w-32 h-32 rounded-full mx-auto mb-4"
               />

@@ -1,6 +1,6 @@
 import React from 'react'
 import handyman from "../../assets/handyman.jpg"
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 const ServicesSection = () => {
   return (
     <>
@@ -16,28 +16,28 @@ const ServicesSection = () => {
         </div>
         <section className="flex justify-evenly text-[var(--primary-color)] flex-col sm:flex-row p-6">
           <div className="w-full sm:w-1/4  h-72 overflow-hidden rounded-xl my-2 hover:scale-110 transform transition-transform duration-300">
-             <a href="" target="_self" className="w-full h-full hover:scale-110 transform transition-transform duration-300 flex items-center justify-center bg-center bg-cover bg-[url('https://static.wixstatic.com/media/74f558_993f041afc4045c69c824d6022d78ca0~mv2_d_4000_2667_s_4_2.jpeg/v1/fill/w_369,h_726,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/74f558_993f041afc4045c69c824d6022d78ca0~mv2_d_4000_2667_s_4_2.jpeg')]">
+             <Link to="/services" target="_self" className="w-full h-full hover:scale-110 transform transition-transform duration-300 flex items-center justify-center bg-center bg-cover bg-[url('https://static.wixstatic.com/media/74f558_993f041afc4045c69c824d6022d78ca0~mv2_d_4000_2667_s_4_2.jpeg/v1/fill/w_369,h_726,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/74f558_993f041afc4045c69c824d6022d78ca0~mv2_d_4000_2667_s_4_2.jpeg')]">
                           <div className=" w-full h-full text-3xl flex items-center justify-center bg-[var(--blur-bg)] hover:bg-transparent transform transition-bg duration-500 opacity-100 hover:opacity-0 transform transition-opacity duration-500">
                   <span>Kitchens</span>
               </div>
             
-                </a>
+                </Link>
           </div>
           <div className="w-full sm:w-1/4 h-72 overflow-hidden rounded-xl my-2 hover:scale-110 transform transition-transform duration-300">
-             <a href="" target="_self" className="w-full h-full hover:scale-110 transform transition-transform duration-300  flex items-center justify-center bg-center bg-cover bg-[url('https://static.wixstatic.com/media/74f558_4ef3f401e4a2400a8979c42d1a7ba1a7~mv2_d_5760_3840_s_4_2.jpeg/v1/fill/w_364,h_726,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/74f558_4ef3f401e4a2400a8979c42d1a7ba1a7~mv2_d_5760_3840_s_4_2.jpeg')]">
+             <Link to="/services" target="_self" className="w-full h-full hover:scale-110 transform transition-transform duration-300  flex items-center justify-center bg-center bg-cover bg-[url('https://static.wixstatic.com/media/74f558_4ef3f401e4a2400a8979c42d1a7ba1a7~mv2_d_5760_3840_s_4_2.jpeg/v1/fill/w_364,h_726,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/74f558_4ef3f401e4a2400a8979c42d1a7ba1a7~mv2_d_5760_3840_s_4_2.jpeg')]">
              <div className=" w-full h-full text-3xl flex items-center justify-center bg-[var(--blur-bg)] hover:bg-transparent transform transition-bg duration-500 opacity-100 hover:opacity-0 transform transition-opacity duration-500">
                   <span >Bedrooms</span>
               </div>
             
-                </a>
+                </Link>
           </div>
           <div className="w-full sm:w-1/4 h-72 overflow-hidden rounded-xl my-2 hover:scale-110 transform transition-transform duration-300">
-             <a href="" target="_self" className="w-full h-full hover:scale-110 transform transition-transform duration-300  flex items-center justify-center  bg-center bg-cover bg-[url('https://static.wixstatic.com/media/74f558_4ef3f401e4a2400a8979c42d1a7ba1a7~mv2_d_5760_3840_s_4_2.jpeg/v1/fill/w_364,h_726,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/74f558_4ef3f401e4a2400a8979c42d1a7ba1a7~mv2_d_5760_3840_s_4_2.jpeg')]">
+             <Link to="/services" target="_self" className="w-full h-full hover:scale-110 transform transition-transform duration-300  flex items-center justify-center  bg-center bg-cover bg-[url('https://static.wixstatic.com/media/74f558_4ef3f401e4a2400a8979c42d1a7ba1a7~mv2_d_5760_3840_s_4_2.jpeg/v1/fill/w_364,h_726,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/74f558_4ef3f401e4a2400a8979c42d1a7ba1a7~mv2_d_5760_3840_s_4_2.jpeg')]">
              <div className=" w-full h-full text-3xl flex items-center justify-center bg-[var(--blur-bg)] hover:bg-transparent transform transition-bg duration-500 opacity-100 hover:opacity-0 transform transition-opacity duration-500">
                   <span>Interiors</span>
               </div>
             
-                </a>
+                </Link>
           </div>
          
         

@@ -25,6 +25,7 @@ const Services = () => {
         // setCategories((prevCategories) => [...prevCategories, ...data]);
         // setCategories([{name:"Popular"}, ...data]);
         setCategories(data)
+        setSelectedItem(data[0].name)
       } catch (error) {
         setError(error.message);
       }
