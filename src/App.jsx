@@ -1,17 +1,24 @@
-import { useState } from 'react'
+
 import './App.css'
-import Layout from './layout/Layout'
-import { BrowserRouter } from 'react-router-dom'
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
+import { Outlet, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const location = useLocation()
+  const isHome = location.pathname === '/'
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  }, [location.pathname])
   return (
     <>
-    <BrowserRouter>
-    
-     <Layout/>
-     </BrowserRouter>
+      <Header />
+      <main className={isHome ? 'p-0 m-0' : 'mx-auto pt-16'}>
+        <Outlet />
+      </main>
+      <Footer />
     </>
   )
 }
